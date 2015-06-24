@@ -103,7 +103,7 @@ $.widget("ui.resizable", $.ui.mouse, {
 		});
 
 		// Wrap the element if it cannot hold child nodes
-		if (this.element[0].nodeName.match(/^(canvas|textarea|input|select|button|img)$/i)) {
+		if (this.element[0].nodeName.match(/^(canvas|textarea|input|select|button|img|iframe)$/i)) {
 
 			this.element.wrap(
 				$("<div class='ui-wrapper' style='overflow: hidden;'></div>").css({
